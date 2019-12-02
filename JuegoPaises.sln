@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriasJuego", "LibreriasJuego\LibreriasJuego.csproj", "{4A88D9B9-DFE6-41F7-94C8-650349F9759C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasLibreria", "PruebasLibreria\PruebasLibreria.csproj", "{265DFDDB-44B9-483A-A60C-491C5427FE9E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A88D9B9-DFE6-41F7-94C8-650349F9759C} = {4A88D9B9-DFE6-41F7-94C8-650349F9759C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{4A88D9B9-DFE6-41F7-94C8-650349F9759C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A88D9B9-DFE6-41F7-94C8-650349F9759C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A88D9B9-DFE6-41F7-94C8-650349F9759C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265DFDDB-44B9-483A-A60C-491C5427FE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265DFDDB-44B9-483A-A60C-491C5427FE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265DFDDB-44B9-483A-A60C-491C5427FE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265DFDDB-44B9-483A-A60C-491C5427FE9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
