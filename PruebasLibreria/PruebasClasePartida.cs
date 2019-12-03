@@ -10,7 +10,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestCrearPartida()
         {
-            Partida p = new Partida();
+            Partida p = new Partida("Pepe", "Europa");
          }
     }
 }

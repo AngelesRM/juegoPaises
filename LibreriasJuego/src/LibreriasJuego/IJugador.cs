@@ -5,7 +5,7 @@ namespace LibreriasJuego
 {
     public interface IJugador
     {
-        string nombre { get; }
+        public string nombre { get; }
         public List <IPartida> historicoPartidas { get; }
         public IPartida nuevaPartida(IContinente continenteElegido);
     }
