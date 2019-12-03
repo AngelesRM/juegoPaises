@@ -9,22 +9,25 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEspañaCapital()
         {
-            Juego.dameElJuego();
-            BaseDatosGeografica miBaseDatosGeografica = null;
-            Pais españa = miBaseDatosGeografica.getPais ("España");
+            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
+            //Juego.dameElJuego();
+            //BaseDatosGeografica miBaseDatosGeografica = null;
+            IPais españa = miBaseDatosGeografica.getPais ("España");
             Assert.AreEqual(españa.capital, "Madrid");
         }
         [TestMethod] 
         public void TestEspañaNombre()
         {
-            Pais españa = null;
+            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
+            IPais españa = miBaseDatosGeografica.getPais("España");
             Assert.AreEqual(españa.nombre, "España");
         }
         [TestMethod]
         public void TestEspañaContinente()
         {
-            Pais españa = null;
-            Continente europa = null;
+            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
+            IPais españa = miBaseDatosGeografica.getPais("España");
+            IContinente europa = miBaseDatosGeografica.getContinente("Europa");
             Assert.AreEqual(españa.continente, europa);
         }
     }

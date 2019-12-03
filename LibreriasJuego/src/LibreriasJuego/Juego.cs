@@ -4,25 +4,26 @@ using System.Text;
 
 namespace LibreriasJuego
 {
-    public class Juego
+    public class IJuego
     {
          /*Patrón SINGLETON básico
           Permite tener una ÚNICA instancia de la clase*/
-        private Juego()
+        private IJuego()
         {
             baseDatosJugadores = null;
+            baseDatosGeografica = null;
 
         }
-       private static Juego elJuego;
-        public static Juego dameElJuego ()
+        private static IJuego elJuego;
+        public static IJuego dameElJuego ()
         {
             if (elJuego == null)
-                elJuego = new Juego();
+                elJuego = new IJuego();
             return elJuego;
         }
     /*Fin patrón*/
 
-        public BaseDatosJugadores baseDatosJugadores { get; }
-        public BaseDatosGeografica baseDatosGeografica { get; }
+        public IBaseDatosJugadores baseDatosJugadores { get; }
+        public IBaseDatosGeografica baseDatosGeografica { get; }
     }
 }
