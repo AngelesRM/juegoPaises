@@ -8,7 +8,7 @@ namespace LibreriasJuego
     {
         public IPais getPais(string nombrePais);
         public IContinente getContinente(string nombreContinente);
-        public List<IContinente> getContinentes();
+        public IList<IContinente> Continentes { get; }
 
 
     }

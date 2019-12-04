@@ -10,27 +10,27 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestRecuperarListaPartidas()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
             Assert.IsNotNull(pepe.historicoPartidas);
         }
         [TestMethod]
         public void TestNuevaPartida1()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
-            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContinente("Europa");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContinente("Europa");
             IPartida partida = pepe.nuevaPartida(europa);
             Assert.IsNotNull(partida);
         }
         [TestMethod]
         public void TestNuevaPartida2()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
             
             int cuantasLlevaba = pepe.historicoPartidas.Count;
-            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContinente("Europa");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContinente("Europa");
             IPartida partida = pepe.nuevaPartida(europa);
 
             int cuantasLleva = pepe.historicoPartidas.Count;

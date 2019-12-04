@@ -11,9 +11,9 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestNuevaPregunta()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
-            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContinente("Europa");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContinente("Europa");
             IPartida partida = pepe.nuevaPartida(europa);
             IPregunta pregunta =partida.nuevaPregunta();
             Assert.IsNotNull(pregunta);
@@ -23,9 +23,9 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestRespuestaFallida()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
-            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContinente("Europa");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContinente("Europa");
             IPartida partida = pepe.nuevaPartida(europa);
             IPregunta pregunta = partida.nuevaPregunta();
             bool resultado = pregunta.proponerRespuesta("Paris");
@@ -34,9 +34,9 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestRespuestasMultiplesFallidas()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
-            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContinente("Europa");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContinente("Europa");
             IPartida partida = pepe.nuevaPartida(europa);
             IPregunta pregunta = partida.nuevaPregunta();
             int intentos = pregunta.intentosRestantes;
@@ -52,9 +52,9 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestRespuestaCorrecta()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
-            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContinente("Europa");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContinente("Europa");
             IPartida partida = pepe.nuevaPartida(europa);
             IPregunta pregunta = partida.nuevaPregunta();
             bool resultado = pregunta.proponerRespuesta(pregunta.pais.capital);

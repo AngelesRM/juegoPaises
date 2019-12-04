@@ -9,7 +9,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEspañaCapital()
         {
-            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
+            IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
             //Juego.dameElJuego();
             //BaseDatosGeografica miBaseDatosGeografica = null;
             IPais españa = miBaseDatosGeografica.getPais ("España");
@@ -18,14 +18,14 @@ namespace PruebasLibreria
         [TestMethod] 
         public void TestEspañaNombre()
         {
-            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
+            IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
             IPais españa = miBaseDatosGeografica.getPais("España");
             Assert.AreEqual(españa.nombre, "España");
         }
         [TestMethod]
         public void TestEspañaContinente()
         {
-            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
+            IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
             IPais españa = miBaseDatosGeografica.getPais("España");
             IContinente europa = miBaseDatosGeografica.getContinente("Europa");
             Assert.AreEqual(españa.continente, europa);

@@ -10,7 +10,7 @@ namespace PruebasLibreria
         //Prueba Alta
         public void TestAltaJugador()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.nuevoJugador("Pepe");
             Assert.IsNotNull(pepe);
         }
@@ -18,7 +18,7 @@ namespace PruebasLibreria
         //Prueba Recuperacion
         public void TestRecuperacionJugador()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
             Assert.IsNotNull(pepe);
         }
@@ -26,7 +26,7 @@ namespace PruebasLibreria
         //Prueba Nombre
         public void TestPepeNombre()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
             IJugador pepe = miBaseDatosJugadores.getJugador("Pepe");
             Assert.AreEqual(pepe.nombre, "Pepe");
         }

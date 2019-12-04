@@ -4,21 +4,21 @@ using System.Text;
 
 namespace LibreriasJuego
 {
-    public class IJuego
+    public class Juego
     {
          /*Patrón SINGLETON básico
           Permite tener una ÚNICA instancia de la clase*/
-        private IJuego()
+        private Juego()
         {
-            baseDatosJugadores = null;
-            baseDatosGeografica = null;
+            baseDatosJugadores = new BaseDatosJugadoresCutre();
+            baseDatosGeografica = new BaseDatosGeografica();
 
         }
-        private static IJuego elJuego;
-        public static IJuego dameElJuego ()
+        private static Juego elJuego;
+        public static Juego dameElJuego ()
         {
             if (elJuego == null)
-                elJuego = new IJuego();
+                elJuego = new Juego();
             return elJuego;
         }
     /*Fin patrón*/
