@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BaseDatosGeograficaFichero\BaseDatosGeograficaFichero.csproj" />
+    <ProjectReference Include="..\BaseDatosJugadoresFichero\BaseDatosJugadoresFichero.csproj" />
+    <ProjectReference Include="..\InterfazLibreria\InterfazLibreria.csproj" />
     <ProjectReference Include="..\LibreriasJuego\LibreriasJuego.csproj" />
   </ItemGroup>
 
