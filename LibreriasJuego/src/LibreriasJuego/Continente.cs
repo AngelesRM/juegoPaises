@@ -4,7 +4,7 @@ namespace LibreriasJuego
 {
     public class Continente:IContinente
     {
-        internal Continente(string nombre) 
+        public Continente(string nombre) 
         {
             this.nombre = nombre;
             //this.paises = new IList<IPais>();
@@ -27,7 +27,7 @@ namespace LibreriasJuego
             return this.misPaises[nombrePais];
         }
 
-        internal void asignarPais (IPais nuevoPais)
+        public void asignarPais (IPais nuevoPais)
         {
                this.misPaises.Add(nuevoPais.nombre, nuevoPais);
             

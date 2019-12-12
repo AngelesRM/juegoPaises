@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="src\LibreriasJuego\Juego.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\InterfazLibreria\InterfazLibreria.csproj" />
   </ItemGroup>
 

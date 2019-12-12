@@ -6,7 +6,7 @@ namespace LibreriasJuego
 {
     public class BaseDatosJugadoresCutre: IBaseDatosJugadores
     {
-        internal BaseDatosJugadoresCutre()
+        public BaseDatosJugadoresCutre()
         {
             this.misJugadores = new Dictionary<string, IJugador>();
 
