@@ -10,13 +10,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebasLibreria", "PruebasL
 		{4A88D9B9-DFE6-41F7-94C8-650349F9759C} = {4A88D9B9-DFE6-41F7-94C8-650349F9759C}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazJuegoCore", "InterfazJuegoCore\InterfazJuegoCore.csproj", "{906C4A92-48A5-4F58-AA38-6577C0A31DCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfazJuegoCore", "InterfazJuegoCore\InterfazJuegoCore.csproj", "{906C4A92-48A5-4F58-AA38-6577C0A31DCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazLibreria", "InterfazLibreria\InterfazLibreria.csproj", "{ED75C48E-38F6-4228-A7FA-0AF3F5ABF53C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfazLibreria", "InterfazLibreria\InterfazLibreria.csproj", "{ED75C48E-38F6-4228-A7FA-0AF3F5ABF53C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosJugadoresFichero", "BaseDatosJugadoresFichero\BaseDatosJugadoresFichero.csproj", "{F3138791-3653-471B-A4E9-EF5E4E77020E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosJugadoresFichero", "BaseDatosJugadoresFichero\BaseDatosJugadoresFichero.csproj", "{F3138791-3653-471B-A4E9-EF5E4E77020E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosGeograficaFichero", "BaseDatosGeograficaFichero\BaseDatosGeograficaFichero.csproj", "{781EE79F-E91A-434A-A397-2D7668BCFAB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosGeograficaFichero", "BaseDatosGeograficaFichero\BaseDatosGeograficaFichero.csproj", "{781EE79F-E91A-434A-A397-2D7668BCFAB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosGeograficaWebServiceCliente", "BaseDatosGeograficaWebServiceCliente\BaseDatosGeograficaWebServiceCliente.csproj", "{3C44CBE6-F214-442C-B9E2-9618A94BD8D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDGeograficaWebService", "BDGeograficaWebService\BDGeograficaWebService.csproj", "{7CE3BB14-BA09-4799-8948-71373FC4670B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,14 @@ Global
 		{781EE79F-E91A-434A-A397-2D7668BCFAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{781EE79F-E91A-434A-A397-2D7668BCFAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{781EE79F-E91A-434A-A397-2D7668BCFAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C44CBE6-F214-442C-B9E2-9618A94BD8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C44CBE6-F214-442C-B9E2-9618A94BD8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C44CBE6-F214-442C-B9E2-9618A94BD8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C44CBE6-F214-442C-B9E2-9618A94BD8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE3BB14-BA09-4799-8948-71373FC4670B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE3BB14-BA09-4799-8948-71373FC4670B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE3BB14-BA09-4799-8948-71373FC4670B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE3BB14-BA09-4799-8948-71373FC4670B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
